@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Warden', type: :request do
-  before { ENV['MVPAAS_SECRET'] = pem.to_s }
+  before { ENV['MVPAAS_SECRET'] = Base64.urlsafe_encode64(pem.to_s) }
   after  { ENV['MVPAAS_SECRET'] = nil }
 
   describe "GET #index" do

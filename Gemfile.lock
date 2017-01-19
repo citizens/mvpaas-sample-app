@@ -84,7 +84,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
-    mvpaas (0.1.0)
+    mvpaas (0.1.1)
       jwt (~> 1.5.1)
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
@@ -193,7 +193,7 @@ DEPENDENCIES
   jquery-rails
   jwt
   listen (~> 3.0.5)
-  mvpaas
+  mvpaas (~> 0.1.1)
   pg
   puma (~> 3.0)
   rails (~> 5.0.1)
