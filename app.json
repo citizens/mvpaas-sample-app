@@ -1,0 +1,6 @@
+{
+  "name": "MVPaaS Sample App",
+  "description": "A sample backened app to use with MVPaaS",
+  "repository": "https://github.com/citizens/mvpaas-sample-app",
+  "keywords": ["ruby", "rails", "mvp", "saas"]
+}
