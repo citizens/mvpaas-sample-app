@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   def require_user
     request.env['warden'].authenticate(:mvpaas)
     @user = request.env['warden'].user
-   redirect_to_login if @user.nil?
+    redirect_to_login if @user.nil?
   end
 
   def redirect_to_login
