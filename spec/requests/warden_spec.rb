@@ -8,7 +8,7 @@ RSpec.describe 'Warden', type: :request do
     let(:pem) { generate_pem }
     let(:token) { generate_jwt(pem) }
     let(:redirect_url) { "#{ENV['MVPAAS_URL']}/sign_in.html" }
-    
+
     context 'with a valid token' do
       it "logs the user in" do
         get '/dashboard', params: { token: token }

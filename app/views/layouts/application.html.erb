@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MvpaasStarterApp</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>MVPaaS App</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css', media: 'all' %>
+  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', 'application' %>/
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
+  <html>
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+    <%= link_to 'MVPaaas App', dashboard_url, class: 'navbar-brand' %>
+  </nav>
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <%= link_to "Dashboard", dashboard_path, class: 'nav-link' %>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+        <%= yield %>
+      </main>
+    </div>
+  </div>
+  </html>
+</body>
