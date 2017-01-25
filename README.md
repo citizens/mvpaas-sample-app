@@ -11,8 +11,6 @@ heroku run rake db:migrate
 ```
 
 ### Non-Heroku Setup
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 ```
 ENV['MVPAAS_SECRET'] = 'xyz'
 ENV['MVPAAS_URL'] = 'http://your-domain.com'
