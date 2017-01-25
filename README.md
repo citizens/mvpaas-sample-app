@@ -1,5 +1,5 @@
-# MVPaaS
-## Sample App
+# MVPaaS Sample App
+#### This a basic Ruby on Rails application pre-configured to be used with MVPaaS.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
